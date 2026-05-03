@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ TaskFlow
+# ⚡ Ethara 
 
 ### Full-Stack Team Task Manager with Role-Based Access Control
 
