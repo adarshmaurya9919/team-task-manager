@@ -171,7 +171,7 @@ taskflow/
 ### 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/taskflow.git
+git clone https://github.com/adarshmaurya9919/team-task-manager.git
 cd taskflow
 ```
 
@@ -194,7 +194,7 @@ Start the backend:
 
 ```bash
 node src/app.js
-# 🚀 TaskFlow API running on port 3001
+# 🚀 Ethara API running on port 3001
 ```
 
 ### 3 — Set Up the Frontend
@@ -210,7 +210,7 @@ npm run dev
 
 ### 4 — Open the App
 
-Visit **[http://localhost:5173](http://localhost:5173)**
+Visit **team-task-manager-production-1699.up.railway.app**
 
 > Register your first account — it will automatically receive **Admin** privileges.
 
@@ -308,7 +308,7 @@ Authorization: Bearer <your_jwt_token>
 ```bash
 git init
 git add .
-git commit -m "feat: initial commit — TaskFlow full-stack app"
+git commit -m "feat: initial commit — Ethara full-stack app"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/taskflow.git
 git push -u origin main
@@ -317,7 +317,7 @@ git push -u origin main
 ### Step 2 — Create Railway Project
 
 1. Go to **[railway.app](https://railway.app)** → **New Project**
-2. Click **Deploy from GitHub repo** → select your `taskflow` repository
+2. Click **Deploy from GitHub repo** → select your `Ethara` repository
 3. Railway will detect `railway.toml` automatically
 
 ### Step 3 — Add Environment Variables
@@ -343,13 +343,20 @@ cd backend && node src/app.js
 
 The Express backend automatically serves the compiled React frontend from `frontend/dist/`.
 
-Your app will be live at `https://taskflow-xxxx.up.railway.app` 🎉
+Your app will be live at `team-task-manager-production-1699.up.railway.app` 🎉
 
 ---
 
 ## 📸 Screenshots
 
-> Add your own screenshots here after running the app locally.
+### 🔐 Login Page
+![Login](screenshots/login.png)
+
+### 🏠 Home Page
+![Home](screenshots/dashboard.png)
+
+### 📊 Admin
+![Admin](screenshots/admin.png)
 
 | Page | Description |
 |------|-------------|
@@ -391,11 +398,11 @@ of this software to deal in the Software without restriction.
 
 ## 👨‍💻 Author
 
-**Adarsh**
+**Adarsh Maurya**
 
 - 🎓 22BET10209 — Chandigarh University
 - 📧 Email: 22BET10209@cuchd.in
-- 🐙 GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- 🐙 GitHub: [@adarshmaurya9919](https://github.com/adarshmaurya9919)
 
 ---
 
