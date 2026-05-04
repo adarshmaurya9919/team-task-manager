@@ -32,7 +32,10 @@ app.get('/api/health', (req, res) => res.json({ status: 'ok', timestamp: new Dat
 // Serve frontend in production
 const distPath = join(__dirname, '../../frontend/dist');
 app.use(express.static(distPath));
-app.get('/{*path}', (req, res) => {
+// app.get('/{*path}', (req, res) => {
+//   res.sendFile(join(distPath, 'index.html'));
+// });
+app.get('*', (req, res) => {
   res.sendFile(join(distPath, 'index.html'));
 });
 
