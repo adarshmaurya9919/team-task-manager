@@ -1,9 +1,9 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { createServer } from 'http';
 
 import authRoutes from './routes/auth.js';
 import projectRoutes from './routes/projects.js';
@@ -35,13 +35,10 @@ app.use(express.static(distPath));
 app.get('/{*path}', (req, res) => {
   res.sendFile(join(distPath, 'index.html'));
 });
-// app.get('*', (req, res) => {
-//   res.sendFile(join(distPath, 'index.html'));
-// });
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`🚀 TaskFlow API running on port ${PORT}`);
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 Ethara API running on port ${PORT}`);
 });
 
 export default app;
